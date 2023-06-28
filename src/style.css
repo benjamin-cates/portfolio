@@ -77,9 +77,9 @@ img {
   box-shadow: none;
   height: 1.6rem;
   width: 1.6rem;
-  line-height:2rem;
-  vertical-align:middle;
-  border-radius:0;
+  line-height: 2rem;
+  vertical-align: middle;
+  border-radius: 0;
 }
 
 #headshot {
@@ -250,4 +250,26 @@ ul {
   position: absolute;
   left: 0;
   background: #ffffff30;
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width:1000px) {
+  .project {
+    flex-direction: column;
+  }
+  .flex_column {
+    width: 100%;
+  }
+  .project_title {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    box-sizing:border-box;
+  }
+  .project_title::before {
+    display: none;
+  }
+  .project {
+    border-top-right-radius:0;
+  }
+
 }
